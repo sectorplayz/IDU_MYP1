@@ -116,6 +116,39 @@
 <br>
 <br>
 <center><i><u><b><h1 style="font-family: 'Silkscreen', sans-serif; font-size: 50px; color: rgba(93, 46, 46, 0.765);"> Terrestrial Ecosystem FAQ</h1></b></u></i></center><br>
-
+<br>
+    <div class="faq-container">
+  <div class="question" onclick="toggleAnswer('answer1.1')">Question 1. What is a terrestrial ecosystem?</div>
+  <div class="answer" id="answer1.1">A terrestrial ecosystem refers to a land-based ecosystem that includes all the living organisms and their interactions with the physical environment, such as soil, water, and air. Examples include forests, grasslands, deserts, and tundra.
+  </div>
+  <div class="question" onclick="toggleAnswer('answer1.2')">Question 2. How do plants contribute to terrestrial ecosystems?
+  </div>
+  <div class="answer" id="answer1.2">Answer: Plants play a crucial role in terrestrial ecosystems by converting sunlight into energy through photosynthesis. They provide habitat and food for various organisms, contribute to oxygen production, and help regulate the climate by absorbing carbon dioxide.
+    <br>
+    </div>
+    <div class="question" onclick="toggleAnswer('answer1.3')">Question 3. What is the importance of biodiversity in terrestrial ecosystems?
+    </div>
+    <div class="answer" id="answer1.3">Answer: Biodiversity in terrestrial ecosystems refers to the variety of plant and animal species present. It is essential for ecosystem stability and resilience. Diverse ecosystems are more capable of adapting to environmental changes, providing ecosystem services like pollination, water purification, and nutrient cycling.
+    <br>
+    </div>
+    <div class="question" onclick="toggleAnswer('answer1.4')">Question 4. How are human activities impacting terrestrial ecosystems?
+    </div>
+    <div class="answer" id="answer1.4">Answer: Human activities, such as deforestation, urbanization, and agriculture, can have detrimental effects on terrestrial ecosystems. Loss of habitat, pollution, and climate change are significant threats. Conservation efforts, sustainable land management, and reforestation are important strategies to mitigate these impacts.
+    </div>
+    <div class="question" onclick="toggleAnswer('answer1.5')">Question 5. What role do decomposers play in terrestrial ecosystems?
+    </div>
+    <div class="answer" id="answer1.5">Answer: Decomposers, such as bacteria, fungi, and detritivores, play a vital role in breaking down dead organic matter. This decomposition process releases nutrients back into the soil, facilitating nutrient cycling and supporting the growth of plants. Decomposers contribute to the overall health and sustainability of terrestrial ecosystems.
+    </div>
+</div>
+<script>
+  function toggleAnswer(id) {
+      var answer = document.getElementById(id);
+      if (answer.style.display === "none") {
+          answer.style.display = "block";
+      } else {
+          answer.style.display = "none";
+      }
+  }
+</script>
 </body>
 </html>
