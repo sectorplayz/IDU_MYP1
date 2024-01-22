@@ -1,0 +1,117 @@
+
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nova+Square&family=Oswald:wght@500&family=Silkscreen&display=swap" rel="stylesheet">
+<!--Navigation Bar Codes 1-->
+<style>
+    /* Style the navigation bar */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Style the navigation bar tabs */
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #C34A2C;
+    }
+  </style>
+<title>FWQ (Frequently Wondered Questions)</title>
+<style>
+  .faq-container {
+      max-width: 600px;
+      margin: auto;
+  }
+
+  .question {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #f0f0f0;
+      margin-bottom: 5px;
+  }
+
+  .answer {
+      display: none;
+      padding: 10px;
+      background-color: #e0e0e0;
+  }
+</style>
+</head>
+<body bgcolor="#DADBDD">
+<!-- Navigation bar -->
+<ul>
+    <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/index.html">Home</a></li>
+    <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Terrestrial%20Ecosystem.html">Terrestrial Ecosystem</a></li>
+    <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Desert%20Ecosystem.html">Desert Ecosystem</a></li>
+    <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Temprate%20Forest%20Ecosystem.html">Temprate Forest Ecosystem</a></li>
+    <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Diference%20Between%20Desert%20and%20temprate%20forest%20ecosystem.html">Difference between Desert and Temprate Forest Ecosystem</a></li>
+    <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/FWQ%20(IDU).html">FAQ</a></li>
+  </ul>
+<!--main Code-->
+    <center><img src="C:\Users\shrey\Desktop\FWQ.png" height="500" alt="404 Error"></center><br>
+    <center><i><u><b><h1 style="font-family: 'Silkscreen', sans-serif; font-size: 50px; color: red;">Ecosystem FAQ</h1></b></u></i></center><br>
+    <br>
+    <div class="faq-container">
+    <div class="question" onclick="toggleAnswer('answer1')">Question 1. What is the ecosystem?</div>
+    <div class="answer" id="answer1">Answer: The ecosystem is the community of living organisms in conjunction with non-living components of their environment, interacting as a system.
+    </div>
+    <div class="question" onclick="toggleAnswer('answer2')">Question 2. What are the different types of ecosystems?
+    </div>
+    <div class="answer" id="answer2">Answer: The different types of the ecosystem include:<br>
+
+      Terrestrial ecosystem<br>
+      Forest ecosystem<br>
+      Grassland ecosystem<br>
+      Desert ecosystem<br>
+      Tundra ecosystem<br>
+      Aquatic ecosystem<br>
+      Freshwater ecosystem<br>
+      Marine ecosystem<br>
+      </div>
+
+      <div class="question" onclick="toggleAnswer('answer3')">Question 3. What are the functional components of an ecosystem?
+      </div>
+      <div class="answer" id="answer3">Answer: The four main components of an ecosystem are:<br>
+        (i) Productivity<br>
+        (ii) Decomposition<br>
+        (iii) Energy flow<br>
+        (iv) Nutrient cycling<br>
+      </div>
+      <div class="question" onclick="toggleAnswer('answer4')">Question 4. Which ecosystem do we live in?
+      </div>
+      <div class="answer" id="answer4">Answer: We live in a terrestrial ecosystem. This is the ecosystem where organisms interact on landforms. Examples of terrestrial ecosystems include tundra, taigas, and tropical rainforests. Deserts, grasslands and temperate deciduous forests also constitute terrestrial ecosystems.
+      </div>
+      <div class="question" onclick="toggleAnswer('answer5')">Question 5. What is the structure of the ecosystem?
+      </div>
+      <div class="answer" id="answer5">Answer: The structure of the ecosystem includes the organisms and physical features of the environment, including the amount and distribution of nutrients in a particular habitat. It also provides information regarding the climatic conditions of that area.
+      </div>
+</div>
+<script>
+    function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
