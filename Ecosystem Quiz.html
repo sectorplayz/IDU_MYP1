@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Navigation Bar Codes 1-->
+<style>
+  /* Style the navigation bar */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* Style the navigation bar tabs */
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #C34A2C;
+  }
+</style>
+
+  <title>Ecosystem Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    h2 {
+      color: #333;
+    }
+    .question {
+      margin-bottom: 15px;
+    }
+    .options {
+      margin-bottom: 20px;
+    }
+    .result {
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation bar -->
+<ul>
+  <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/index.html">Home</a></li>
+  <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Terrestrial%20Ecosystem.html">Terrestrial Ecosystem</a></li>
+  <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Desert%20Ecosystem.html">Desert Ecosystem</a></li>
+  <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Temprate%20Forest%20Ecosystem.html">Temprate Forest Ecosystem</a></li>
+  <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Diference%20Between%20Desert%20and%20temprate%20forest%20ecosystem.html"> Desert v/s Temperate Forest Ecosystem</a></li>
+  <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/FWQ%20(IDU).html">FAQ</a></li>
+  <li><a href="file:///C:/Users/shrey/Desktop/HTML%20Files/Ecosystem%20Quiz.html">Quiz</a></li>
+</ul>
+
+<h2>Ecosystem Quiz</h2>
+
+<div id="quiz">
+  <div class="question">
+    <p>1. What is the term for a community of living organisms interacting with each other and their physical environment?</p>
+  </div>
+  <div class="options">
+    <input type="radio" name="q1" value="a"> a) Biome<br>
+    <input type="radio" name="q1" value="b"> b) Ecosystem<br>
+    <input type="radio" name="q1" value="c"> c) Habitat<br>
+    <input type="radio" name="q1" value="d"> d) Biosphere<br>
+  </div>
+
+  <div class="question">
+    <p>2. In which layer of the rainforest do you find the majority of the biodiversity and dense vegetation?</p>
+  </div>
+  <div class="options">
+    <input type="radio" name="q2" value="a"> a) Canopy<br>
+    <input type="radio" name="q2" value="b"> b) Understory<br>
+    <input type="radio" name="q2" value="c"> c) Forest floor<br>
+    <input type="radio" name="q2" value="d"> d) Emergent layer<br>
+  </div>
+
+  <div class="question">
+    <p>3. Which process involves the conversion of light energy into chemical energy by plants, algae, and some bacteria?</p>
+  </div>
+  <div class="options">
+    <input type="radio" name="q3" value="a"> a) Photosynthesis<br>
+    <input type="radio" name="q3" value="b"> b) Respiration<br>
+    <input type="radio" name="q3" value="c"> c) Decomposition<br>
+    <input type="radio" name="q3" value="d"> d) Transpiration<br>
+  </div>
+
+  <div class="question">
+    <p>4. What is the term for the gradual change in species composition of a given area over time?</p>
+  </div>
+  <div class="options">
+    <input type="radio" name="q4" value="a"> a) Evolution<br>
+    <input type="radio" name="q4" value="b"> b) Succession<br>
+    <input type="radio" name="q4" value="c"> c) Adaptation<br>
+    <input type="radio" name="q4" value="d"> d) Mutation<br>
+  </div>
+
+  <div class="question">
+    <p>5. Name one primary decomposer organism crucial for breaking down dead organic matter in ecosystems.</p>
+  </div>
+  <div class="options">
+    <input type="radio" name="q5" value="a"> a) Owl<br>
+    <input type="radio" name="q5" value="b"> b) Earthworm<br>
+    <input type="radio" name="q5" value="c"> c) Tiger<br>
+    <input type="radio" name="q5" value="d"> d) Fungi<br>
+  </div>
+
+  <button onclick="calculateScore()">Submit</button>
+  <div class="result" id="result"></div>
+</div>
+
+<script>
+  function calculateScore() {
+    var score = 0;
+
+    for (var i = 1; i <= 5; i++) {
+      var answer = document.querySelector('input[name="q' + i + '"]:checked');
+      if (answer) {
+        if (i === 1 && answer.value === "b") {
+          score++;
+        } else if (i === 2 && answer.value === "a") {
+          score++;
+        } else if (i === 3 && answer.value === "a") {
+          score++;
+        } else if (i === 4 && answer.value === "b") {
+          score++;
+        } else if (i === 5 && answer.value === "d") {
+          score++;
+        }
+      }
+    }
+
+    var resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "Your Score: " + score + "/5";
+  }
+</script>
+
+</body>
+</html>
